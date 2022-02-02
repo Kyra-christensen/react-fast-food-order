@@ -4,7 +4,7 @@ import OrderImages from './OrderImages';
 import OrderName from './OrderName';
 import OrderList from './OrderList';
 import FoodDropdown from './FoodDropdown';
-import SideDropdown from './Sidedropdown';
+import SideDropdown from './SideDropdown';
 import DrinkDropdown from './DrinkDropdown';
 import InstructionForm from './InstructionForm';
 
