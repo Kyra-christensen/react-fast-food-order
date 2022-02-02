@@ -5,6 +5,7 @@ export default function OrderName({ setOrderName }) {
     setOrderName(e.target.value);
   }
   return <section>
+      Customer Name:
     <input onChange={handleChange} />
   </section>;
 }
