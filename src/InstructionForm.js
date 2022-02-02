@@ -17,7 +17,7 @@ export default function InstructionForm({ setInstructionsArray, instructionsArra
   return <section>
     <form onSubmit={handleSubmit}>
         Add Special Instructions:
-      <input onChange={handleChange} />
+      <input value={instructionInput} onChange={handleChange} />
       <button>Submit</button>
     </form>
   </section>;

@@ -1,5 +1,10 @@
+body, #root, .App {
+    background-color: lavender;
+}
+
 .App {
   text-align: center;
+  background-color:lemonchiffon;
 }
 
 .App-logo {
@@ -41,12 +46,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color:lemonchiffon;
 }
 
 .order-images img {
     width: 300px;
     height: 30vh;
-    object-fit: cover;
+    object-fit: contain;
+    margin: 5px;
+}
+
+.instructions-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.instruction {
+    width: 200px;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+.customer-name {
+    margin: 15px;
+}
+
+.side-dropdown {
     margin: 5px;
 }

@@ -4,9 +4,9 @@ export default function SideDropdown({ setSideId }) {
   function handleChange(e) {
     setSideId(e.target.value);
   }
-  return <section onChange={handleChange}>
+  return <select onChange={handleChange} className='side-dropdown'>
     <option value="1">Fries</option>
     <option value="2">Fried Rice</option>
     <option value="3">Potato Chips</option>
-  </section>;
+  </select>;
 }
