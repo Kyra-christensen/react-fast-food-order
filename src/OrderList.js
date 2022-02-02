@@ -1,10 +1,9 @@
 import React from 'react';
+import Instruction from './Instruction';
 
 export default function OrderList({ instructionsArray }) {
-  return <ul>
-    {
-      instructionsArray.map((instruction, i) =>
-        <li key={`${instruction}-${i}`}> {instruction} </li>)
-    }
-  </ul>;
+  return <div>
+    {instructionsArray.map((instruction, i) =>
+      <Instruction key={`${instruction}-${i}`} instruction={instruction} />)}
+  </div>;
 }
