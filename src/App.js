@@ -3,6 +3,10 @@ import { useState } from 'react';
 import OrderImages from './OrderImages';
 import OrderName from './OrderName';
 import OrderList from './OrderList';
+import FoodDropdown from './FoodDropdown';
+import SideDropdown from './Sidedropdown';
+import DrinkDropdown from './DrinkDropdown';
+import InstructionForm from './InstructionForm';
 
 function App() {
   const [foodId, setFoodId] = useState(1);
@@ -22,6 +26,14 @@ function App() {
         drinkId={drinkId} />
 
       <OrderList instructionsArray={instructionsArray} />
+
+      <div className='order-form'>
+        <FoodDropdown setFoodId={setFoodId} />
+        <SideDropdown setSideId={setSideId} />
+        <DrinkDropdown setDrinkId={setDrinkId} />
+        <OrderName setOrderName={setOrderName} />
+        <InstructionForm instructionsArray={instructionsArray} setInstructionsArray={setInstructionsArray} />
+      </div>
     </div>
   );
 }
