@@ -5,7 +5,7 @@ export default function DrinkDropdown({ setDrinkId }) {
     setDrinkId(e.target.value);
   }
 
-  return <select onChange={handleChange}>
+  return <select className='drink-dropdown' onChange={handleChange}>
     <option value="1">Soda</option>
     <option value="2">Lemonade</option>
     <option value="3">Smoothie</option>
